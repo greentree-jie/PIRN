@@ -1,0 +1,109 @@
+{
+  "training": {
+    "count": 101,
+    "Re_min": 5.0,
+    "Re_max": 25.0,
+    "epochs": 400,
+    "final_MSE": 1.1899206323765352e-05,
+    "data": "cavity_fvm_101_N64.npz"
+  },
+  "cases": {
+    "15": {
+      "u": {
+        "relative_L2_full": 0.0005345778190530837,
+        "relative_L2_core_5": 0.0006950703682377934,
+        "NRMSE_over_range": 0.00010300210124114528,
+        "max_abs_error": 0.002425550017505884,
+        "original_error_denominator_ref_max": 1.5,
+        "original_error_mean": 8.857145439833403e-05,
+        "original_error_median": 6.565947842318565e-05,
+        "original_error_max": 0.00161703338380903
+      },
+      "v": {
+        "relative_L2_full": 0.0006507126381620765,
+        "relative_L2_core_5": 0.00045423119445331395,
+        "NRMSE_over_range": 0.00011856439959956333,
+        "max_abs_error": 0.0019155542831867933,
+        "original_error_denominator_ref_max": 0.5298219323158264,
+        "original_error_mean": 0.00016885610239114612,
+        "original_error_median": 0.00011292478302493691,
+        "original_error_max": 0.003615468041971326
+      },
+      "p": {
+        "relative_L2_full": 0.005550158675760031,
+        "relative_L2_core_5": 0.007133392617106438,
+        "NRMSE_over_range": 0.00011057857045670971,
+        "max_abs_error": 0.16479873657226562,
+        "original_error_denominator_ref_max": 34.226722717285156,
+        "original_error_mean": 8.530954801244661e-05,
+        "original_error_median": 3.3585733035579324e-05,
+        "original_error_max": 0.0048149144276976585
+      }
+    },
+    "20.1": {
+      "u": {
+        "relative_L2_full": 0.0005616412963718176,
+        "relative_L2_core_5": 0.0007738225976936519,
+        "NRMSE_over_range": 0.00010808863589772955,
+        "max_abs_error": 0.0032699787989258766,
+        "original_error_denominator_ref_max": 2.009999990463257,
+        "original_error_mean": 9.290233720093966e-05,
+        "original_error_median": 6.657149060629308e-05,
+        "original_error_max": 0.001626855111680925
+      },
+      "v": {
+        "relative_L2_full": 0.0006767159793525934,
+        "relative_L2_core_5": 0.0005135475657880306,
+        "NRMSE_over_range": 0.00012323824921622872,
+        "max_abs_error": 0.002443671924993396,
+        "original_error_denominator_ref_max": 0.695702314376831,
+        "original_error_mean": 0.0001890796993393451,
+        "original_error_median": 0.00013168324949219823,
+        "original_error_max": 0.0035125252325087786
+      },
+      "p": {
+        "relative_L2_full": 0.007565781008452177,
+        "relative_L2_core_5": 0.011348997242748737,
+        "NRMSE_over_range": 0.00015111570246517658,
+        "max_abs_error": 0.25769805908203125,
+        "original_error_denominator_ref_max": 46.37339782714844,
+        "original_error_mean": 0.00012065112969139591,
+        "original_error_median": 4.822278788196854e-05,
+        "original_error_max": 0.0055570234544575214
+      }
+    },
+    "30": {
+      "u": {
+        "relative_L2_full": 0.003997831139713526,
+        "relative_L2_core_5": 0.0060979705303907394,
+        "NRMSE_over_range": 0.0007669395999982953,
+        "max_abs_error": 0.018303871154785156,
+        "original_error_denominator_ref_max": 3.0,
+        "original_error_mean": 0.0005897245137020946,
+        "original_error_median": 0.00034730747574940324,
+        "original_error_max": 0.006101290229707956
+      },
+      "v": {
+        "relative_L2_full": 0.00507148914039135,
+        "relative_L2_core_5": 0.004433246795088053,
+        "NRMSE_over_range": 0.0009226853144355118,
+        "max_abs_error": 0.012200398370623589,
+        "original_error_denominator_ref_max": 0.9986177682876587,
+        "original_error_mean": 0.0014282433548942208,
+        "original_error_median": 0.0008828658610582352,
+        "original_error_max": 0.012217285111546516
+      },
+      "p": {
+        "relative_L2_full": 0.0783991739153862,
+        "relative_L2_core_5": 0.11149296164512634,
+        "NRMSE_over_range": 0.0015766924479976296,
+        "max_abs_error": 6.442779541015625,
+        "original_error_denominator_ref_max": 70.75672149658203,
+        "original_error_mean": 0.001230409718118608,
+        "original_error_median": 0.0006606967654079199,
+        "original_error_max": 0.09105537086725235
+      }
+    }
+  },
+  "original_project_error_formula": "abs((reference - prediction) / reference.max())"
+}
