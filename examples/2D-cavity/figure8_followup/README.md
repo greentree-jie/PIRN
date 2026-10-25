@@ -1,7 +1,7 @@
-# Figure 8 cavity data and finite-volume check
+# Figure 8 cavity results
 
-`manuscript_Figure8.png` is the revised Figure 8 embedded in the 2026-10-25 manuscript. The matching checkpoint and prediction arrays have not been located, so the error values in that image cannot yet be regenerated from this directory.
+`manuscript_Figure8.png` is the revised Figure 8 embedded in the 2026-10-25 manuscript. Its field panels match the outputs of `plot_fvm_figure9_panels.py`, and its boxplots match `plot_fvm_figure9_boxplots.py`. Those scripts used Figure 9 as the working number before the manuscript figures were renumbered. The checkpoint, three field-comparison arrays, plotted panels, and boxplot error samples are in `fvm-results/`.
 
-The scripts provide a separate finite-volume calculation: generate cavity reference fields, train a PIRN model, and plot its predictions. The methods and error definitions are in `FVM_ONLY_REPRODUCTION.md`. These results use finite-volume reference fields, whereas the manuscript figure uses OpenFOAM-derived fields. `Figure9_FVM_original_error_all_cases.png` retains the numbering used when that calculation was made.
+The calculation uses finite-volume reference fields. Run `generate_fvm_dataset.py`, `train_fvm_pirn.py`, then the two plotting scripts to regenerate the component panels; see `FVM_ONLY_REPRODUCTION.md` for the numerical setup and error definition. The previously stored OpenFOAM-derived data are not the reference fields for this revised figure.
 
-In the revised manuscript image, `(c2)` is labeled extrapolation and `(d2)` interpolation; the corresponding field rows and figure caption give the opposite order. These labels need to be reconciled using the matched arrays.
+The boxplots were arranged differently from the field rows when the final image was assembled. The left rows are training (`Re=15`), interpolation (`Re=20.1`), and extrapolation (`Re=30`); the right panels are training, extrapolation, and interpolation. Thus `(c2)` and `(d2)` do not match the adjacent rows or the caption. The source boxplot images retain their original names: `c2` is training, `d2` is extrapolation, and `b2` is interpolation.
