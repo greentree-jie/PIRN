@@ -1,0 +1,25 @@
+{
+  "uniform_experiment": "uniform_predictions.npz",
+  "uniform_best_epoch": 37775,
+  "nonuniform_experiment": "../nonuniform_Figure12/three_case_fields.npz",
+  "nonuniform_best_epoch": 41925,
+  "common_positions": "native nonuniform 32x32 x/y at z=0.16 m",
+  "uniform_prediction_mapping": "bilinear interpolation of uniform 32x32 prediction to native nonuniform x/y",
+  "shared_CFD": "native nonuniform CFD at Gr40000 Ha500 z=0.16 m",
+  "error": "abs(interpolated uniform PIRN - nonuniform CFD) / max(abs(nonuniform CFD native slice))",
+  "display": "same 320x320 display interpolation and nearest-edge extension as existing nonuniform standalone output",
+  "limits": {
+    "w": {
+      "PIRN_CFD_vmin": -1.541396401686448e-05,
+      "PIRN_CFD_vmax": 1.541396401686448e-05,
+      "error_color_max": 0.1467369149879469,
+      "CFD_denominator": 1.3563483e-05
+    },
+    "T_rise": {
+      "PIRN_CFD_vmin": 0.0,
+      "PIRN_CFD_vmax": 0.019210439525340853,
+      "error_color_max": 0.04190972468300389,
+      "CFD_denominator": 0.018109999999978754
+    }
+  }
+}
